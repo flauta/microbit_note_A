@@ -5,6 +5,9 @@ input.onButtonPressed(Button.A, function () {
     }
     basic.showString("" + (nomi_note[nota]))
 })
+input.onButtonPressed(Button.AB, function () {
+    music.playTone(nota * 50 + 380, valore * 100)
+})
 input.onButtonPressed(Button.B, function () {
     valore += 1
     if (valore > 3) {
